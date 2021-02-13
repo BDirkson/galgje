@@ -1,5 +1,6 @@
 // This is basically a layout component
-
+// 1. Debug fix gif format images
+// 2. Debug check spelling 
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
@@ -26,9 +27,9 @@ const App = props => {
   const wordWasGuessed = wordGuessed(game.chosenWord, game.guessedLetters);
   const wrongLetters = getWrongLetters(game.chosenWord, game.guessedLetters);
   const gameIsOver = isGameOver(game, wrongLetters, wordWasGuessed);
-
+// debug typing erro wordGuessed
   const gameOver = gameIsOver ? (
-    <GameOver chosenWord={game.chosenWord} wordGuesed={wordWasGuessed} />
+    <GameOver chosenWord={game.chosenWord} wordGuessed={wordWasGuessed} />
   ) : null;
 
   return (
