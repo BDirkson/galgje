@@ -1,5 +1,11 @@
 // This is basically a layout component
 
+// 1. Debug fix gif format images
+// 2. Debug check spelling 
+// 3. Check where possible error might be 
+// 4. Check if props are passed correctly, probably an erro in 
+//    elements < TextInput/> or <ChosenWord />  
+
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
