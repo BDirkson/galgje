@@ -1,10 +1,12 @@
 // This is basically a layout component
 
 // 1. Debug fix gif format images
-// 2. Debug check spelling 
-// 3. Check where possible error might be 
-// 4. Check if props are passed correctly, probably an erro in 
-//    elements < TextInput/> or <ChosenWord />  
+// 2. Check spelling 
+// 3. Check filenames of components 
+// 4. Check where possible error might be 
+// 5. Check if props are passed correctly, probably an error in 
+//    components < TextInput/> or <ChosenWord /> 
+// 6. check <Textinput/> first 
 
 import React from "react";
 import "./App.css";
@@ -55,5 +57,4 @@ const App = props => {
     </div>
   );
 };
-
 export default App;

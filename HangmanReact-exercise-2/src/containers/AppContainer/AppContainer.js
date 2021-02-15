@@ -46,6 +46,7 @@ class AppContainer extends React.Component {
     const newLetter = !this.state.guessedLetters.includes(
       this.state.currentChosenLetter
     );
+    // 14. letter s missing = gueSSedLetters
     if (inputGiven && newLetter) {
       const newGuessedLetters = [...this.state.guesedLetters];
       newGuessedLetters.push(this.state.currentChosenLetter);
