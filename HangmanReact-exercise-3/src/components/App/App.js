@@ -1,5 +1,12 @@
 // This is basically a layout component
 
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Winning means wordWasGuessed = true and/or isGameOver = true
+// 5. Check wordGuesed first as it's 'feeding' wordWasGuessed
+
+
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
@@ -9,13 +16,14 @@ import ResetGameButton from "../ResetGameButton/ResetGameButton";
 import GuessesLeft from "../GuessesLeft/GuessesLeft";
 import WronglyGuessedLetters from "../WronglyGuessedLetters/WronglyGuessedLetters";
 
+// 6. guessedLetters is missing a ! that's why it's returning true all the time
 const wordGuessed = (word, guessedLetters) => {
   word = word.split("");
   // remove all letters from word that are already guessed
   // We can do this with a for loop to.
   let remaining = word.filter(letter =>
     // If the letter is guessed return false (we want to remove that then)
-    guessedLetters.includes(letter)
+    !guessedLetters.includes(letter)
   );
   // If we have letters left the word is not yet guessed
   return remaining.length === 0;
