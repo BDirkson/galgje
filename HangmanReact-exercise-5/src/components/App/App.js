@@ -1,5 +1,12 @@
 // This is basically a layout component
 
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Check where letter is added to the game
+// 5. Check why the game is over at -1
+// 6. Check in App.js the funciton isGameOver
+
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
@@ -21,13 +28,13 @@ const wordGuessed = (word, guessedLetters) => {
   // If we have letters left the word is not yet guessed
   return remaining.length === 0;
 };
-
+// 7. Bugfix: isGameOver returns true if the wrongLetters > maxGuesses it should be >=
 const isGameOver = game => {
   if (wordGuessed(game.chosenWord, game.guessedLetters)) {
     return true;
   }
   if (
-    getWrongLetters(game.chosenWord, game.guessedLetters).length >
+    getWrongLetters(game.chosenWord, game.guessedLetters).length >=
     game.maxGuesses
   ) {
     return true;
