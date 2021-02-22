@@ -1,5 +1,11 @@
 // This is basically a layout component
 
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Check where letter is added to the game
+// 5. AppContainer has a function that 'pushes' letters to the game so to speak
+
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";

@@ -40,16 +40,18 @@ class AppContainer extends React.Component {
     newState.currentChosenLetter = event.target.value;
     this.setState(newState);
   };
-
-  guessLetterHandler = event => {
+// 6. Bugfix - if statement missing in case something is filled in
+guessLetterHandler = event => {
+  if (this.state.currentChosenLetter.length > 0) { // if statement was missing
     const newGuessedLetters = [...this.state.guessedLetters];
     newGuessedLetters.push(this.state.currentChosenLetter);
     this.setState({
       guessedLetters: newGuessedLetters,
       currentChosenLetter: ""
     });
-    event.preventDefault();
-  };
+  }
+  event.preventDefault();
+};
 
   componentDidMount = () => {
     this.restartGameHandler();
