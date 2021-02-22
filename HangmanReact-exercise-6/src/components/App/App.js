@@ -1,5 +1,10 @@
 // This is basically a layout component
 
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. 
+
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
