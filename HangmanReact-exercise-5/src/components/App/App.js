@@ -3,10 +3,8 @@
 // 1. Debug fix gif format images
 // 2. Check spelling 
 // 3. Check filenames of components
-// 4. Check where guessed letter is added to current letter
-// 5. Check (again like in bugfix excercise 4) AppContainer and the fucntion guessLetterHandler.
-//    The only check: is the input field empty but not IF the letter is in it
-
+// 4. Check where game over is determined
+// 5. Check isGameOver function 
 
 import React from "react";
 import "./App.css";

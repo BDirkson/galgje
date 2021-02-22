@@ -6,7 +6,6 @@
 // 4. Winning means wordWasGuessed = true and/or isGameOver = true
 // 5. Check wordGuesed first as it's 'feeding' wordWasGuessed
 
-
 import React from "react";
 import "./App.css";
 import ChosenWord from "../ChosenWord/ChosenWord";
@@ -16,7 +15,7 @@ import ResetGameButton from "../ResetGameButton/ResetGameButton";
 import GuessesLeft from "../GuessesLeft/GuessesLeft";
 import WronglyGuessedLetters from "../WronglyGuessedLetters/WronglyGuessedLetters";
 
-// 6. guessedLetters is missing a ! that's why it's returning true all the time
+// 6. Bugfix - guessedLetters is missing a ! that's why it's returning true all the time
 const wordGuessed = (word, guessedLetters) => {
   word = word.split("");
   // remove all letters from word that are already guessed

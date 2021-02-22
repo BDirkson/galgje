@@ -40,18 +40,16 @@ class AppContainer extends React.Component {
     newState.currentChosenLetter = event.target.value;
     this.setState(newState);
   };
-// 6. Bugfix: add a new extra condtion 
+
   guessLetterHandler = event => {
-    const inputGiven = this.state.currentChosenLetter.length > 0;
-    const sameLetter = !this.state.guessedLetters.includes(this.state.currentChosenLetter);
-    if (inputGiven && sameLetter) { // added extra condition if the letter is already in the array
+    if (this.state.currentChosenLetter.length > 0) {
       const newGuessedLetters = [...this.state.guessedLetters];
       newGuessedLetters.push(this.state.currentChosenLetter);
       this.setState({
-        guessedLetters: newGuessedLetters
+        guessedLetters: newGuessedLetters,
+        currentChosenLetter: ""
       });
     }
-    this.setState({ currentChosenLetter: "" });
     event.preventDefault();
   };
 

@@ -1,0 +1,56 @@
+Excercise1
+// 1. Debug fix gif format images
+// 2. Debug check spelling 
+// 3. Debug typing error wordGuessed - App.js
+
+Excercise2
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components 
+// 4. Check where possible error might be 
+// 5. Check if props are passed correctly, probably an error in 
+//    components < TextInput/> or <ChosenWord /> 
+// 6. check <Textinput/> first 
+// 7. console.log(props.submit) - TextInput.js
+// 8. props not defined
+// 9. classic mistake I always make...  no return statement 
+// 10. and { } missing
+// 11. but we have to check spelling further
+// 12. this.state.guesedLetters is undefined
+// 13. check AppContainer line 50
+// 14. letter s missing = gueSSedLetters - AppContainer.js
+
+Excercise3
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Winning means wordWasGuessed = true and/or isGameOver = true
+// 5. Check wordGuesed first as it's 'feeding' wordWasGuessed
+// 6. Buffix - guessedLetters is missing a ! that's why it's returning true all the time
+
+Excercise4 
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Check where letter is added to the game
+// 5. AppContainer has a function that 'pushes' letters to the game so to speak
+// 6. Bugfix - IF statement missing in case something is filled in
+
+Excercise5
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Check where game over is determined
+// 5. Check isGameOver function 
+// 6. Bugfix: isGameOver returns true if the wrongLetters > maxGuesses it should be >= 
+//    - App.js
+
+Excercise6
+// 1. Debug fix gif format images
+// 2. Check spelling 
+// 3. Check filenames of components
+// 4. Check where guessed letter is added to current letter
+// 5. Check (again like in bugfix excercise 4) AppContainer and the fucntion guessLetterHandler.
+//    The only check: is the input field empty but not IF the letter is in it
+// 6. Bugfix: added extra condition if the letter is already in the array
+

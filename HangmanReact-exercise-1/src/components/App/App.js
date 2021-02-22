@@ -27,7 +27,7 @@ const App = props => {
   const wordWasGuessed = wordGuessed(game.chosenWord, game.guessedLetters);
   const wrongLetters = getWrongLetters(game.chosenWord, game.guessedLetters);
   const gameIsOver = isGameOver(game, wrongLetters, wordWasGuessed);
-// debug typing error wordGuessed
+// 3. Debug typing error wordGuessed
   const gameOver = gameIsOver ? (
     <GameOver chosenWord={game.chosenWord} wordGuessed={wordWasGuessed} />
   ) : null;
