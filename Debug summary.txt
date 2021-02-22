@@ -52,5 +52,4 @@ Excercise6
 // 4. Check where guessed letter is added to current letter
 // 5. Check (again like in bugfix excercise 4) AppContainer and the fucntion guessLetterHandler.
 //    The only check: is the input field empty but not IF the letter is in it
-// 6. Bugfix: added extra condition if the letter is already in the array
-
+// 6. Bugfix: added extra condition if the letter is already in the array - AppContainer.js
